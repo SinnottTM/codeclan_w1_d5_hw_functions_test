@@ -99,4 +99,9 @@ def sell_pet_to_customer(cc_pet_shop, pet_name, customer_name):
         increase_pets_sold(cc_pet_shop, 1)
         add_or_remove_cash(cc_pet_shop, pet_cost)
 
+# Notes on improving
+# Pet_name should be pet, it is a bet object and not just the name
+# cc_pet_shop should be called per_shop so it can be re-useable
+# add_or_remove_cash could use the same logic as increase_pets_sold, neater and cleaner
+# Generally pretty good, just need to remember that at this point, trying to proof apps so they don't break isn't really needed (not at that layer yet)
     
